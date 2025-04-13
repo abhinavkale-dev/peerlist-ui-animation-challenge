@@ -1,4 +1,16 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Peerlist x Aceternity UI Animation Challenge
+
+This project showcases my implementation of the Peerlist x Aceternity UI Animation Challenge, featuring modern UI animations and interactive components built with Next.js, Tailwind CSS, and various animation libraries.
+
+https://github.com/Husain01/peerlist-aceternity-ui-challenge
+
+## Completed Challenges
+
+### ✅ Day 1: Gooey Menu
+An interactive menu with a fluid, gooey animation effect that creates a smooth, organic interaction experience.
+
+### ✅ Day 2: Dynamic Status Indicator
+A status indicator component with dynamic animations that visually represent different states.
 
 ## Getting Started
 
@@ -14,23 +26,19 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technologies Used
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Next.js
+- Tailwind CSS
+- React
+- TypeScript
+- Framer motion
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Project Structure
 
-## Learn More
+- `/app/day-1`: Gooey Menu implementation
+- `/app/day-2`: Dynamic Status Indicator implementation
+- `/components`: Shared UI components
+- `/public`: Static assets
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
