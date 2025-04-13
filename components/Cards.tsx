@@ -40,7 +40,7 @@ export default function Cards() {
           key={challenge.day}
           className={`
             card-animation block group rounded-xl overflow-hidden shadow-lg
-            hover:shadow-xl w-72 h-52
+            hover:shadow-xl w-72 h-52 relative
           `}
           style={{ 
             opacity: 0, 
@@ -48,6 +48,11 @@ export default function Cards() {
             transition: 'opacity 0.6s ease-out, transform 0.6s ease-out'
           }}
         >
+          <div className="absolute top-0 left-0 w-full flex justify-center pt-2">
+            <span className="px-2 py-1 text-xs font-semibold rounded-full bg-indigo-500 text-white">
+              Day {challenge.day}
+            </span>
+          </div>
           <div className="bg-gray-100 dark:bg-gray-700 p-6 border border-gray-200 dark:border-gray-600 rounded-xl h-full flex flex-col justify-center gap-6">
             <h3 className="text-xl font-bold text-gray-900 dark:text-white text-center duration-300">
               {challenge.title}
