@@ -8,7 +8,8 @@ export default function TransactionStatusPage() {
         <BackButton />
       </div>
       
-      <h1 className="text-2xl font-bold mb-8">Dynamic Status Indicator</h1>
+      <h1 className="text-2xl font-bold mb-3">Dynamic Status Indicator</h1>
+      <p className="text-sm mb-9">(Wait 3 seconds for each animation cycle)</p>
       <div className="mb-8">
         <StatusIndicator />
       </div>
