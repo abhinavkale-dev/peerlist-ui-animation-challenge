@@ -1,5 +1,7 @@
 # Peerlist x Aceternity UI Animation Challenge
 
+![Peerlist x Aceternity UI Challenge](/public/peerlist-challenge.png)
+
 This project showcases my implementation of the Peerlist x Aceternity UI Animation Challenge, featuring modern UI animations and interactive components built with Next.js, Tailwind CSS, and various animation libraries.
 
 ## Completed Challenges
