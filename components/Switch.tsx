@@ -45,4 +45,6 @@ export const Thumb = forwardRef<
       {children}
     </div>
   );
-}); 
+});
+
+Thumb.displayName = 'Switch.Thumb'; 
