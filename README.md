@@ -2,8 +2,6 @@
 
 This project showcases my implementation of the Peerlist x Aceternity UI Animation Challenge, featuring modern UI animations and interactive components built with Next.js, Tailwind CSS, and various animation libraries.
 
-https://github.com/Husain01/peerlist-aceternity-ui-challenge
-
 ## Completed Challenges
 
 ### ✅ Day 1: Gooey Menu
