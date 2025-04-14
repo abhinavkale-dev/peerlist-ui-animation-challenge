@@ -14,6 +14,11 @@ const challenges = [
     title: "Dynamic Transaction Status Indicator",
     path: "/day-2",
   },
+  {
+    day: 3,
+    title: "Animated Checkboxes",
+    path: "/day-3",
+  },
 ];
 
 export default function Cards() {
@@ -33,14 +38,15 @@ export default function Cards() {
   }, []);
 
   return (
-    <div ref={containerRef} className="flex justify-center items-center flex-wrap gap-8 max-w-4xl mx-auto my-24">
+    <div ref={containerRef} className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-6 lg:gap-8 max-w-7xl mx-auto px-4 my-12 md:my-24">
       {challenges.map((challenge) => (
         <Link
           href={challenge.path}
           key={challenge.day}
           className={`
             card-animation block group rounded-xl overflow-hidden shadow-lg
-            hover:shadow-xl w-72 h-52 relative
+            hover:shadow-xl w-full sm:w-80 md:w-1/3 h-48 sm:h-52 relative
+            transition-all duration-300 ease-in-out
           `}
           style={{ 
             opacity: 0, 
@@ -48,17 +54,19 @@ export default function Cards() {
             transition: 'opacity 0.6s ease-out, transform 0.6s ease-out'
           }}
         >
-          <div className="absolute top-0 left-0 w-full flex justify-center pt-2">
-            <span className="px-2 py-1 text-xs font-semibold rounded-full bg-indigo-500 text-white">
+          <div className="absolute top-0 left-0 w-full flex justify-center pt-3">
+            <span className="px-3 py-1.5 text-sm font-semibold rounded-full bg-indigo-500 text-white">
               Day {challenge.day}
             </span>
           </div>
-          <div className="bg-gray-100 dark:bg-gray-700 p-6 border border-gray-200 dark:border-gray-600 rounded-xl h-full flex flex-col justify-center gap-6">
-            <h3 className="text-xl font-bold text-gray-900 dark:text-white text-center duration-300">
-              {challenge.title}
-            </h3>
+          <div className="bg-gray-100 dark:bg-gray-700 p-6 border border-gray-200 dark:border-gray-600 rounded-xl h-full flex flex-col">
+            <div className="flex-1 flex flex-col justify-center items-center mt-8">
+              <h3 className="text-lg sm:text-xl font-bold text-gray-900 dark:text-white text-center duration-300">
+                {challenge.title}
+              </h3>
+            </div>
 
-            <div className="flex justify-center overflow-hidden">
+            <div className="flex justify-center overflow-hidden mt-6">
               <span className="text-white font-medium inline-flex items-center bg-indigo-600 dark:bg-indigo-700 px-4 py-2 rounded-lg transition-all duration-300 group-hover:translate-y-[-2px] group-hover:shadow-md">
                 Live Demo
                 <svg

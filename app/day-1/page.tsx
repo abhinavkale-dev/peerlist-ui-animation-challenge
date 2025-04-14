@@ -6,6 +6,7 @@ import { Home, Mail, Menu, Settings, User, X } from "lucide-react";
 import { GooeyMenu } from "@/components/challenge/gooey-menu";
 import { useRouter } from "next/navigation";
 import BackButton from "@/components/ui/BackButton";
+import Breadcrumb from "@/components/ui/Breadcrumb";
 
 const navigationItems = [
   { icon: Home, label: "Home", href: "/" },
@@ -54,9 +55,13 @@ export default function GooeyDemo() {
       <div className="absolute top-4 right-4">
         <BackButton />
       </div>
+      
+      <div className="absolute top-4 left-0 right-0 flex justify-center">
+        <Breadcrumb />
+      </div>
 
       <div
-        className="absolute top-4 left-4"
+        className="absolute top-16 left-4"
         style={{ filter: "url(#gooey-filter-menu)" }}
       >
         <AnimatePresence>
@@ -129,7 +134,7 @@ export default function GooeyDemo() {
       </div>
 
       <div className="text-center max-w-md mx-auto">
-        <p className="text-lg font-medium mb-2">Fluid Menu Animation</p>
+        <p className="text-2xl font-medium mb-2">Day 1: Fluid Menu Animation</p>
       </div>
     </div>
   );
