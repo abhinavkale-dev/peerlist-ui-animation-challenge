@@ -1,6 +1,5 @@
 "use client";
 
-import Link from 'next/link';
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import BackButton from "@/components/ui/BackButton";
@@ -135,7 +134,6 @@ export default function Day3() {
           {(Object.entries(tasks) as [TaskKey, boolean][]).map(([task, checked]) => {
             const wasChecked = checked && !loading[task];
             const isBeingUnchecked = loading[task] && checked;
-            const isBeingChecked = loading[task] && !checked;
             
             return (
               <div
