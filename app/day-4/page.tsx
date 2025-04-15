@@ -1,7 +1,6 @@
 'use client'
 
 import Head from 'next/head';
-import Link from 'next/link';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import BackButton from "@/components/ui/BackButton";
