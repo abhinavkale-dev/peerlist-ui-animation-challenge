@@ -19,6 +19,11 @@ const challenges = [
     title: "Animated Checkboxes",
     path: "/day-3",
   },
+  {
+    day: 4,
+    title: "Animated Toggle",
+    path: "/day-4",
+  },
 ];
 
 export default function Cards() {
