@@ -12,6 +12,12 @@ An interactive menu with a fluid, gooey animation effect that creates a smooth, 
 ### ✅ Day 2: Dynamic Status Indicator
 A status indicator component with dynamic animations that visually represent different states.
 
+### ✅ Day 3: Animated Checkboxes
+A to-do list with beautifully animated checkboxes featuring smooth transitions, strikethrough effects, and loading animations when toggling task completion status.
+
+### ✅ Day 4: Animated Toggle Switch
+A premium subscription toggle featuring smooth zoom animations when switching between Free and Premium plans. The component includes a seamless transition where "Monthly • Annual" text zooms in when selecting Premium, followed by Monthly/Annual options.
+
 ## Getting Started
 
 First, run the development server:
@@ -32,6 +38,8 @@ npm run dev
 
 - `/app/day-1`: Gooey Menu implementation
 - `/app/day-2`: Dynamic Status Indicator implementation
+- `/app/day-3`: Animated Checkboxes implementation
+- `/app/day-4`: Animated Toggle Switch implementation
 - `/components`: Shared UI components
 - `/public`: Static assets
 
