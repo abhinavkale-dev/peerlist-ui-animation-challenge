@@ -175,7 +175,6 @@ export default function App() {
       </div>
       
       <div className="max-w-4xl mx-auto pt-16">
-        {/* Header */}
         <div className="text-center mb-8 md:mb-12">
           <motion.div
             initial={{ opacity: 0, y: -20 }}
