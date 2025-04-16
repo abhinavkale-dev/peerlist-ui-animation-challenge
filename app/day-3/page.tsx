@@ -118,7 +118,7 @@ export default function Day3() {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center min-h-screen bg-black relative p-4">
+    <div className="flex flex-col justify-center items-center min-h-screen bg-white dark:bg-black relative p-4">
       <div className="absolute top-4 right-4">
         <BackButton />
       </div>
@@ -127,7 +127,7 @@ export default function Day3() {
         <Breadcrumb />
       </div>
       
-      <h1 className="text-2xl font-bold text-white mb-6">Day 3: Animated Checkboxes</h1>
+      <h1 className="text-2xl font-bold text-gray-800 dark:text-white mb-6">Day 3: Animated Checkboxes</h1>
       
       <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-sm w-80">
         <div className="space-y-3">

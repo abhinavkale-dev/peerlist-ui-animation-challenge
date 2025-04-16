@@ -15,6 +15,7 @@ export default function Breadcrumb({ className = "" }: BreadcrumbProps) {
     { path: "/day-2", label: "Day 2" },
     { path: "/day-3", label: "Day 3" },
     { path: "/day-4", label: "Day 4" },
+    { path: "/day-5", label: "Day 5" },
   ];
 
   return (

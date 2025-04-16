@@ -18,6 +18,9 @@ A to-do list with beautifully animated checkboxes featuring smooth transitions, 
 ### ✅ Day 4: Animated Toggle Switch
 A premium subscription toggle featuring smooth zoom animations when switching between Free and Premium plans. The component includes a seamless transition where "Monthly • Annual" text zooms in when selecting Premium, followed by Monthly/Annual options.
 
+### ✅ Day 5: Shared Layout Tabs
+A collectibles showcase with smooth transitions between different view modes (list, card, and pack) while maintaining shared elements and consistent animations across layout changes.
+
 ## Getting Started
 
 First, run the development server:
@@ -40,6 +43,7 @@ npm run dev
 - `/app/day-2`: Dynamic Status Indicator implementation
 - `/app/day-3`: Animated Checkboxes implementation
 - `/app/day-4`: Animated Toggle Switch implementation
+- `/app/day-5`: Shared Layout Tabs implementation
 - `/components`: Shared UI components
 - `/public`: Static assets
 

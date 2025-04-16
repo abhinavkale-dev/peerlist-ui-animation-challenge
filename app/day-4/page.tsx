@@ -23,14 +23,7 @@ export default function Day4() {
 
   return (
     <>
-      <Head>
-        <title>Day 4: Animated Toggle | Peerlist Challenge</title>
-        <meta name="description" content="An animated toggle switch challenge from Peerlist" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      
-      <div className="flex flex-col justify-center items-center h-screen bg-black relative">
+      <div className="flex flex-col justify-center items-center h-screen bg-white dark:bg-black relative">
         
         <div className="absolute top-4 right-4">
           <BackButton />
@@ -40,9 +33,10 @@ export default function Day4() {
           <Breadcrumb />
         </div>
 
+        <h1 className="text-2xl font-bold text-gray-800 dark:text-white mb-6">Day 4: Animated Toggle</h1>
+
         <div className="relative w-full max-w-md">
-          <div className="relative flex items-center w-full h-16 bg-gray-800 rounded-full overflow-hidden">
- 
+          <div className="relative flex items-center w-full h-16 bg-gray-200 dark:bg-gray-800 rounded-full overflow-hidden">
             <motion.div 
               className="absolute h-16 rounded-full bg-white"
               initial={false}
@@ -60,7 +54,7 @@ export default function Day4() {
             
             {selectedType === 'premium' && (
               <motion.div 
-                className="absolute h-14 m-1 rounded-full bg-gray-900"
+                className="absolute h-14 m-1 rounded-full bg-gray-100 dark:bg-gray-900"
                 initial={{ width: '0%' }}
                 animate={{
                   width: '23%',
@@ -78,7 +72,7 @@ export default function Day4() {
             <button
               onClick={() => handleTypeChange('free')}
               className={`relative z-10 w-1/2 h-full flex items-center justify-center rounded-full font-bold text-lg transition-all duration-300 ${
-                selectedType === 'free' ? 'text-black' : 'text-white'
+                selectedType === 'free' ? 'text-black' : 'text-gray-800 dark:text-white'
               }`}
             >
               Free
@@ -98,11 +92,11 @@ export default function Day4() {
                 >
                   <button
                     onClick={() => handleTypeChange('premium')}
-                    className="w-full h-full flex flex-col items-center justify-center text-white"
+                    className="w-full h-full flex flex-col items-center justify-center text-gray-800 dark:text-white"
                   >
                     <span className="font-bold text-lg mb-1">Premium</span>
                     <motion.span 
-                      className="text-xs text-gray-300"
+                      className="text-xs text-gray-600 dark:text-gray-300"
                       animate={{ 
                         scale: selectedType === 'premium' ? 1.8 : 1,
                         opacity: selectedType === 'premium' ? 0 : 1
@@ -138,7 +132,7 @@ export default function Day4() {
                   <button
                     onClick={() => handlePlanChange('monthly')}
                     className={`w-1/2 h-full flex items-center justify-center font-bold text-lg ${
-                      selectedPlan === 'monthly' ? 'text-white' : 'text-black'
+                      selectedPlan === 'monthly' ? 'text-gray-800 dark:text-white' : 'text-black'
                     }`}
                   >
                     Monthly
@@ -146,7 +140,7 @@ export default function Day4() {
                   <button
                     onClick={() => handlePlanChange('annual')}
                     className={`w-1/2 h-full flex items-center justify-center font-bold text-lg ${
-                      selectedPlan === 'annual' ? 'text-white' : 'text-black'
+                      selectedPlan === 'annual' ? 'text-gray-800 dark:text-white' : 'text-black'
                     }`}
                   >
                     Annual
@@ -158,7 +152,7 @@ export default function Day4() {
         </div>
         
         <div className="mt-20 text-center">
-          <p className="text-white text-lg">
+          <p className="text-gray-800 dark:text-white text-lg">
             {selectedType === 'free' ? 
               'Free Plan Selected' : 
               `Premium Plan - ${selectedPlan === 'monthly' ? 'Monthly' : 'Annual'} Billing`}
