@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { motion, LayoutGroup, AnimatePresence } from 'framer-motion';
-import { List, Grid, Package } from 'lucide-react';
+import { List, Grid, Package, LucideProps } from 'lucide-react';
 import BackButton from "@/components/ui/BackButton";
 import Breadcrumb from "@/components/ui/Breadcrumb";
 
@@ -25,7 +25,7 @@ const collectibles = [
 
 
 interface ViewButtonProps {
-  icon: React.ComponentType<any>;
+  icon: React.ComponentType<LucideProps>;
   label: string;
   isSelected: boolean;
   onClick: () => void;
