@@ -47,13 +47,11 @@ export default function Cards() {
     });
   }, []);
 
-  // Split challenges into two rows
   const topRow = challenges.slice(0, 3);
   const bottomRow = challenges.slice(3);
 
   return (
     <div ref={containerRef} className="flex flex-col max-w-7xl mx-auto px-4 my-12 md:my-24 gap-6 md:gap-10">
-      {/* Top row - days 1-3 */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8 w-full">
         {topRow.map((challenge) => (
           <Link
@@ -106,7 +104,6 @@ export default function Cards() {
         ))}
       </div>
 
-      {/* Bottom row - days 4-5 */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6 lg:gap-8 w-full mx-auto max-w-4xl">
         {bottomRow.map((challenge) => (
           <Link
